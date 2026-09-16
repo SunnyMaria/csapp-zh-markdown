@@ -1,43 +1,71 @@
-# CSAPP Faithful Notes
+# CSAPP 中文 Markdown 学习资料
 
-《深入理解计算机系统》第三版中文 Markdown 整理，保留原文结构、图表与习题，便于阅读、做题和记录笔记。
+面向正在学习《深入理解计算机系统》（CSAPP，第三版）的读者，提供按章节拆分的中文正文、习题与原书答案，以及八个实验的中文说明和官方自学实验包，方便阅读、做题和记录自己的笔记。
 
-## 开始阅读
+**[阅读正文](docs/book/README.md) · [开始实验](docs/labs/README.md) · [全部资料](docs/README.md)**
 
-**[打开成品目录](docs/README.md)**
+## 这里有什么
 
-下载仓库 ZIP 并解压，或使用 Git 克隆后，用支持 Markdown 的阅读器打开 `docs/README.md`。也可以直接在仓库网页上阅读。
-
-`docs/` 包含阅读所需的 Markdown、图片和实验附件，可以整体复制到其他位置。请保持内部目录结构，不要只复制单个 Markdown 文件。阅读不需要 Python、原始扫描 PDF 或 `work/`。
-
-## 1.0 内容
-
-- 序章、第 1—12 章，以及三部分的独立导语。
-- 已整理的练习题和家庭作业，保留填空位置；各章末尾另设原书“练习题答案”入口。
-- Data、Bomb、Attack、Architecture、Cache、Shell、Malloc、Proxy 八个实验的中文 Markdown 说明，附 Y86-64 模拟器指南。
-
-正文忠于原书，普通文字、代码、简单公式和可编辑表格优先使用文本；需要保留空间结构的图示使用本地图片。Markdown 阅读器对数学公式、HTML 上下标和脚注的支持可能不同。
-
-答案章节整理原书提供的练习题答案，不包含自行编写的家庭作业解答。实验目录提供 Markdown 文档、必要配图和官方自学实验压缩包，不保留 PDF、Word 等重复文档版本。
-
-## 目录说明
-
-| 目录 | 用途 |
+| 资料 | 内容与位置 |
 | --- | --- |
-| `docs/` | 面向读者的最终成品，后续内容修订在这里进行 |
-| `work/tools/` | 当前成品的链接、答案与实验包校验工具 |
+| 章节正文 | [序章及第 1—12 章](docs/book/README.md)，按小节拆分，包含三部分的独立导语、图表、代码和旁注 |
+| 练习题与家庭作业 | 练习题放在对应正文小节中；有家庭作业的章节可从章目录进入，填空表格保留空位 |
+| 原书练习题答案 | 共 238 道，各章目录末尾有独立的“练习题答案”入口，便于做完后核对 |
+| 实验中文说明 | [八个实验](docs/labs/README.md)的 Markdown 译文，另附 Y86-64 处理器模拟器指南 |
+| 实验程序包 | 每个实验目录均附官方自学 `.tar` 包，文档顶部可直接找到 |
 
-## 上传前校验
+答案部分是原书提供的**练习题答案**，不包含自行编写的家庭作业解答或实验解答。已核实的原书排印疑点见[答案编校说明](docs/book/answers-editorial.md)。
 
-在仓库根目录运行（Python 3，仅需标准库）：
+## 正文怎么找
+
+从[正文目录](docs/book/README.md)选择章节，再选择小节即可。初次学习可以从第 1 章开始，序章中也有“如何阅读此书”等介绍。
+
+| 阅读范围 | 章节入口 |
+| --- | --- |
+| 计算机系统入门 | [第 1 章：计算机系统漫游](docs/book/chapter1/README.md) |
+| 第一部分：程序结构和执行 | [第 2 章：信息的表示和处理](docs/book/chapter2/README.md)、[第 3 章：程序的机器级表示](docs/book/chapter3/README.md)、[第 4 章：处理器体系结构](docs/book/chapter4/README.md)、[第 5 章：优化程序性能](docs/book/chapter5/README.md)、[第 6 章：存储器层次结构](docs/book/chapter6/README.md) |
+| 第二部分：在系统上运行程序 | [第 7 章：链接](docs/book/chapter7/README.md)、[第 8 章：异常控制流](docs/book/chapter8/README.md)、[第 9 章：虚拟内存](docs/book/chapter9/README.md) |
+| 第三部分：程序间的交互和通信 | [第 10 章：系统级 I/O](docs/book/chapter10/README.md)、[第 11 章：网络编程](docs/book/chapter11/README.md)、[第 12 章：并发编程](docs/book/chapter12/README.md) |
+
+例如，学习补码时，进入第 2 章目录找到 2.2.3；随正文完成练习后，再通过章目录末尾的答案入口核对。需要记录思路时，可以在本地 Markdown 文件中添加笔记，或单独建立自己的笔记文件。
+
+## 实验怎么用
+
+| 实验 | 主要练习内容 | 中文说明 |
+| --- | --- | --- |
+| Data Lab | 位运算、整数与浮点数表示 | [打开](docs/labs/datalab-zh/datalab-zh.md) |
+| Bomb Lab | 汇编阅读、反汇编与调试 | [打开](docs/labs/bomblab-zh/bomblab-zh.md) |
+| Attack Lab | 栈、缓冲区溢出与返回导向编程 | [打开](docs/labs/attacklab-zh/attacklab-zh.md) |
+| Architecture Lab | Y86-64、流水线与性能优化 | [打开](docs/labs/archlab-zh/archlab-zh.md) |
+| Cache Lab | 高速缓存模拟与矩阵转置优化 | [打开](docs/labs/cachelab-zh/cachelab-zh.md) |
+| Shell Lab | 进程、信号与作业控制 | [打开](docs/labs/shlab-zh/shlab-zh.md) |
+| Malloc Lab | 动态内存分配与内存管理 | [打开](docs/labs/malloclab-zh/malloclab-zh.md) |
+| Proxy Lab | 网络编程、并发与缓存 | [打开](docs/labs/proxylab-zh/proxylab-zh.md) |
+
+1. 打开对应中文说明，了解实验目标和要求。
+2. 通过文档顶部的“实验包”链接取得同目录下的 `.tar` 文件，解压到自己的实验工作目录。
+3. 阅读[自学包与原说明的差异](docs/labs/COMPATIBILITY.md)，然后按实验说明和包内 README 配置环境、编译及测试。
+
+实验包主要面向 Linux 环境，部分使用较早的工具链或解释器。原文中的课程日期、服务器地址和提交路径保留自官方模板，不是本仓库提供的课程服务。特别是 **Malloc 自学包仅附两份短测试，不含完整评分跟踪文件**；具体差异已在上述说明中列出。
+
+Architecture Lab 的配套资料见 [Y86-64 模拟器指南](docs/labs/archlab-zh/simguide-zh.md)。实验包的官方来源和 SHA-256 见[来源与校验值](docs/labs/PACKAGES.md)。
+
+## 在线阅读与本地使用
+
+**在线阅读：** 直接点击本页的目录链接，在 GitHub 上查看 Markdown。
+
+**下载阅读：** 使用仓库页面的 **Code → Download ZIP** 下载并解压，或运行：
 
 ```sh
-python work/tools/check_release.py docs
-python work/tools/check_supplements.py
+git clone https://github.com/SunnyMaria/csapp-zh-markdown.git
 ```
 
-检查本地图片和文件链接是否存在、路径大小写是否一致、是否有绝对路径或越出成品目录的依赖，以及阅读目录是否覆盖全部文档。只检查本地引用，不检查外部网站是否可访问。
+然后用支持 Markdown 预览的编辑器或阅读器打开 `README.md` 或 `docs/README.md`。阅读资料不需要安装 Python，也不需要原始扫描 PDF。
 
-第二项检查各章答案题号是否齐全、八份实验译文是否存在，以及八个自学压缩包是否可完整读取并符合记录的 SHA-256 校验值。
+所有学习资料都在 `docs/` 中，可以将这个目录整体复制到其他位置。**请保留内部目录结构和图片文件，不要只复制单个 Markdown 文件**，否则相对路径引用的图片可能无法显示。实验压缩包也保存在各自的实验目录中。
 
-后续直接修改 `docs/` 中的成品，再运行上述两项校验。仓库不保留旧版输出、临时页图、原始扫描 PDF 或一次性整理脚本。
+## 整理方式与反馈
+
+正文尽量忠于原书的措辞和顺序。文字、代码、普通表格及简单公式使用可编辑文本；需要保留空间结构的图示使用本地图片。不同 Markdown 阅读器对上下标和脚注的显示支持可能不同。
+
+如果发现错字、缺段、图片截断或链接失效，欢迎提交 Issue，注明章节、题号或图号，便于核对。维护者使用的校验方法见 [work/README.md](work/README.md)。
