@@ -1,8 +1,15 @@
-# 流水线处理器性能优化
+# Architecture Lab：流水线处理器性能优化
+
+原文：[官方实验说明](https://csapp.cs.cmu.edu/3e/archlab.pdf)  
+实验包：[archlab-handout.tar](archlab-handout.tar)
+
+自学包说明：[运行配置与原说明的差异](../COMPATIBILITY.md)
 
 **CS 349，2015 年夏季**  
 **布置日期：6 月 6 日；截止日期：6 月 21 日 23:59**  
 **本次作业负责人：Harry Bovik（`bovik@cs.cmu.edu`）**
+
+> 译注：课程日期、负责人及下文的课程专用地址或占位符来自官方说明模板，不是本仓库的截止日期或提交要求。
 
 ## 1 引言
 

@@ -30,3 +30,7 @@
 - [参考文献说明](5.15/references.md)
 - [第 5 章家庭作业：5.13～5.17](homework/5.13-5.17-inner-product-and-memset.md)
 - [第 5 章家庭作业：5.18～5.19](homework/5.18-5.19-polynomial-and-prefix-sum.md)
+
+## 练习题答案
+
+- [查看本章练习题答案](answers/answers.md)

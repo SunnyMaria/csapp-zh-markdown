@@ -27,3 +27,7 @@
 - [7.15 小结](7.15/7.15-summary.md)
 - [参考文献说明](7.15/references.md)
 - [家庭作业](homework/7.6-7.13-linking-and-object-files.md)
+
+## 练习题答案
+
+- [查看本章练习题答案](answers/answers.md)

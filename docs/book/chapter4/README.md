@@ -40,3 +40,7 @@
 - [第 4 章家庭作业：4.45～4.50](homework/4.45-4.50-y86-programming.md)
 - [第 4 章家庭作业：4.51～4.57](homework/4.51-4.57-processor-control.md)
 - [第 4 章家庭作业：4.58～4.59](homework/4.58-4.59-write-back-and-performance.md)
+
+## 练习题答案
+
+- [查看本章练习题答案](answers/answers.md)

@@ -34,3 +34,7 @@
 - [家庭作业](homework/8.9-8.15-processes-and-fork.md)
 - [家庭作业（续）](homework/8.16-8.21-process-graphs-and-waiting.md)
 - [家庭作业（续）](homework/8.22-8.26-signals-and-shell.md)
+
+## 练习题答案
+
+- [查看本章练习题答案](answers/answers.md)

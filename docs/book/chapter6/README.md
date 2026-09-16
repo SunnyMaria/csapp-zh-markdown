@@ -31,3 +31,7 @@
 - [第 6 章家庭作业：6.22～6.30](homework/6.22-6.30-disks-and-cache-basics.md)
 - [第 6 章家庭作业：6.31～6.37](homework/6.31-6.37-cache-addressing-and-transpose.md)
 - [家庭作业](homework/6.38-6.46-cache-locality-and-optimization.md)
+
+## 练习题答案
+
+- [查看本章练习题答案](answers/answers.md)

@@ -66,11 +66,6 @@ def main():
             copy_document(source, destination)
             labs.append(destination)
     index(DEST / "labs", "实验资料", labs)
-    for suffix in ["pdf", "docx"]:
-        source = WORK / "output/attacklab-zh" / f"attacklab-zh.{suffix}"
-        shutil.copy2(source, DEST / "labs/attacklab-zh" / source.name)
-    with (DEST / "labs/README.md").open("a", encoding="utf-8") as stream:
-        stream.write("\n## Attack Lab 附件\n\n- [PDF](attacklab-zh/attacklab-zh.pdf)\n- [Word](attacklab-zh/attacklab-zh.docx)\n")
     (DEST / "README.md").write_text(
         "# CSAPP 1.0 阅读目录\n\n"
         "- [序章与第 1—12 章](book/README.md)\n"

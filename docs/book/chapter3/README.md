@@ -62,3 +62,7 @@
 - [第 3 章家庭作业：3.58～3.63](homework/3.58-3.63-arithmetic-and-control-flow.md)
 - [第 3 章家庭作业：3.64～3.69](homework/3.64-3.69-arrays-and-structures.md)
 - [第 3 章家庭作业：3.70～3.75](homework/3.70-3.75-unions-stack-and-floating-point.md)
+
+## 练习题答案
+
+- [查看本章练习题答案](answers/answers.md)

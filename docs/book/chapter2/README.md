@@ -42,3 +42,7 @@
 - [第 2 章家庭作业：2.61～2.81](homework/2.61-2.81-integer-coding.md)
 - [第 2 章家庭作业：2.82～2.91](homework/2.82-2.91-floating-point-basics.md)
 - [第 2 章家庭作业：2.92～2.97](homework/2.92-2.97-bit-level-floating-point.md)
+
+## 练习题答案
+
+- [查看本章练习题答案](answers/answers.md)

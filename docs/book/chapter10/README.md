@@ -18,3 +18,7 @@
 - [10.12 小结](10.12/10.12-summary.md)
 - [参考文献说明](10.12/references.md)
 - [家庭作业](homework/10.6-10.10-system-level-io.md)
+
+## 练习题答案
+
+- [查看本章练习题答案](answers/answers.md)

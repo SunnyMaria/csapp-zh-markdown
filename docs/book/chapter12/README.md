@@ -36,3 +36,7 @@
 - [12.8 小结](12.8/12.8-summary.md)
 - [参考文献说明](12.8/references.md)
 - [家庭作业](homework/12.16-12.39-concurrent-programming.md)
+
+## 练习题答案
+
+- [查看本章练习题答案](answers/answers.md)

@@ -21,3 +21,7 @@
 - [1.9.3 计算机系统中抽象的重要性](1.9/1.9.3-importance-of-abstraction.md)
 - [1.10 小结](1.10/1.10-summary.md)
 - [参考文献说明](1.10/references.md)
+
+## 练习题答案
+
+- [查看本章练习题答案](answers/answers.md)
