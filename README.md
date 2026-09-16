@@ -70,6 +70,14 @@ git clone https://github.com/SunnyMaria/csapp-zh-markdown.git
 
 如果发现错字、缺段、图片截断或链接失效，欢迎提交 Issue，注明章节、题号或图号，便于核对。维护者使用的校验方法见 [work/README.md](work/README.md)。
 
+## 2.0 展望：在线阅读与学习
+
+1.0 以完整、可下载的 Markdown 学习资料为基础。后续计划推出 **CSAPP 在线阅读与学习网站**，让大家直接在浏览器中按章节阅读正文、查阅习题答案和使用实验资料。
+
+2.0 将围绕清晰的章节导航、内容搜索，以及电脑和手机上的阅读体验展开，减少下载和配置阅读工具的步骤。Markdown 资料仍会保留，方便离线阅读和自行记录笔记。
+
+目前网站尚未上线，具体功能和上线时间待确定；后续进展及访问入口会在本仓库更新。
+
 ## 特别致谢
 
 特别致敬并感谢 **[Hansimov/csapp](https://github.com/Hansimov/csapp)**。
