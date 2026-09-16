@@ -1,0 +1,8 @@
+* text=auto
+*.md text eol=lf
+*.py text eol=lf
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.pdf binary
+*.docx binary

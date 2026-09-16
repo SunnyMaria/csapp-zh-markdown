@@ -1,0 +1,9 @@
+# Local source material and intermediate output.
+/work/output/
+/work/tmp/
+/work/sources/
+/work/notes/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
