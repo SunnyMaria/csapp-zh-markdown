@@ -69,3 +69,9 @@ git clone https://github.com/SunnyMaria/csapp-zh-markdown.git
 正文尽量忠于原书的措辞和顺序。文字、代码、普通表格及简单公式使用可编辑文本；需要保留空间结构的图示使用本地图片。不同 Markdown 阅读器对上下标和脚注的显示支持可能不同。
 
 如果发现错字、缺段、图片截断或链接失效，欢迎提交 Issue，注明章节、题号或图号，便于核对。维护者使用的校验方法见 [work/README.md](work/README.md)。
+
+## 特别致谢
+
+特别致敬并感谢 **[Hansimov/csapp](https://github.com/Hansimov/csapp)**。
+
+本项目整理正文所使用的 **OCR 源文件来自该仓库**。它为后续的文字核对、章节拆分以及 Markdown 整理提供了重要基础。感谢原仓库维护者和贡献者对 CSAPP 学习资料的整理与分享，也欢迎大家访问原仓库。
