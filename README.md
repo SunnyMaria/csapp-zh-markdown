@@ -39,16 +39,16 @@
 
 ## 实验怎么用
 
-| 实验 | 主要练习内容 | 中文说明 |
-| --- | --- | --- |
-| Data Lab | 位运算、整数与浮点数表示 | [打开](docs/labs/datalab-zh/datalab-zh.md) |
-| Bomb Lab | 汇编阅读、反汇编与调试 | [打开](docs/labs/bomblab-zh/bomblab-zh.md) |
-| Attack Lab | 栈、缓冲区溢出与返回导向编程 | [打开](docs/labs/attacklab-zh/attacklab-zh.md) |
-| Architecture Lab | Y86-64、流水线与性能优化 | [打开](docs/labs/archlab-zh/archlab-zh.md) |
-| Cache Lab | 高速缓存模拟与矩阵转置优化 | [打开](docs/labs/cachelab-zh/cachelab-zh.md) |
-| Shell Lab | 进程、信号与作业控制 | [打开](docs/labs/shlab-zh/shlab-zh.md) |
-| Malloc Lab | 动态内存分配与内存管理 | [打开](docs/labs/malloclab-zh/malloclab-zh.md) |
-| Proxy Lab | 网络编程、并发与缓存 | [打开](docs/labs/proxylab-zh/proxylab-zh.md) |
+| 实验 | 主要练习内容 | 对应章节 | 中文说明 |
+| --- | --- | --- | --- |
+| Data Lab | 位运算、整数与浮点数表示 | [第 2 章](docs/book/chapter2/README.md) | [打开](docs/labs/datalab-zh/datalab-zh.md) |
+| Bomb Lab | 汇编阅读、反汇编与调试 | [第 3 章](docs/book/chapter3/README.md) | [打开](docs/labs/bomblab-zh/bomblab-zh.md) |
+| Attack Lab | 栈、缓冲区溢出与返回导向编程 | [第 3 章](docs/book/chapter3/README.md) | [打开](docs/labs/attacklab-zh/attacklab-zh.md) |
+| Architecture Lab | Y86-64、流水线与性能优化 | [第 4 章](docs/book/chapter4/README.md)；优化部分可结合[第 5 章](docs/book/chapter5/README.md) | [打开](docs/labs/archlab-zh/archlab-zh.md) |
+| Cache Lab | 高速缓存模拟与矩阵转置优化 | [第 6 章](docs/book/chapter6/README.md)；可结合[第 5 章](docs/book/chapter5/README.md) | [打开](docs/labs/cachelab-zh/cachelab-zh.md) |
+| Shell Lab | 进程、信号与作业控制 | [第 8 章](docs/book/chapter8/README.md) | [打开](docs/labs/shlab-zh/shlab-zh.md) |
+| Malloc Lab | 动态内存分配与内存管理 | [第 9 章](docs/book/chapter9/README.md) | [打开](docs/labs/malloclab-zh/malloclab-zh.md) |
+| Proxy Lab | 网络编程、并发与缓存 | [第 10 章](docs/book/chapter10/README.md)、[第 11 章](docs/book/chapter11/README.md)、[第 12 章](docs/book/chapter12/README.md) | [打开](docs/labs/proxylab-zh/proxylab-zh.md) |
 
 1. 打开对应中文说明，了解实验目标和要求。
 2. 通过文档顶部的“实验包”链接取得同目录下的 `.tar` 文件，解压到自己的实验工作目录。
