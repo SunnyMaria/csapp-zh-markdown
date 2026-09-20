@@ -3,6 +3,12 @@
 /work/tmp/
 /work/sources/
 /work/notes/
+/notes/
+/docs/notes/
+/维护工具/notes/
+/维护工具/output/
+/维护工具/tmp/
+/维护工具/sources/
 __pycache__/
 *.py[cod]
 .DS_Store

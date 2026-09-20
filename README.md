@@ -2,7 +2,45 @@
 
 面向正在学习《深入理解计算机系统》（CSAPP，第三版）的读者，提供按章节拆分的中文正文、习题与原书答案，以及八个实验的中文说明和官方自学实验包，方便阅读、做题和记录自己的笔记。
 
-**[阅读正文](docs/book/README.md) · [开始实验](docs/labs/README.md) · [全部资料](docs/README.md)**
+**[开始阅读](第01章-计算机系统漫游/README.md) · [前言](前言/README.md) · [八个实验](实验/README.md)**
+
+当前版本：**v1.1**。提供整章与小节两种阅读方式，修复审校中发现的文字遗漏、排版和图片裁切问题，并补齐附录 A 与全书参考文献。
+
+## 两种阅读方式
+
+本仓库同时保留两种正文入口，读者可以按自己的习惯选择：
+
+- **整章连续阅读：** 进入章节目录后打开 `chapter.md`，一页读完本章，适合从头到尾学习。
+- **按小节阅读：** 进入章节目录后打开 `README.md`，从小节目录选择具体内容，适合查找、引用和单独阅读。
+
+其中，章节目录里的 `README.md` 只是导航页，`chapter.md` 才是整章正文；每个小节的 Markdown 文件和图片也都继续保留。
+
+## 阅读目录
+
+以下链接进入各章导航页，可选择整章连续阅读或按小节阅读，练习题答案单独提供。
+
+| 章节 | 正文 |
+| --- | --- |
+| 前言 | [出版说明、序言与阅读建议](前言/README.md) |
+| 第 1 章 | [计算机系统漫游](第01章-计算机系统漫游/README.md) |
+| 第一部分 | 程序结构和执行 |
+| 第 2 章 | [信息的表示和处理](第02章-信息的表示和处理/README.md) |
+| 第 3 章 | [程序的机器级表示](第03章-程序的机器级表示/README.md) |
+| 第 4 章 | [处理器体系结构](第04章-处理器体系结构/README.md) |
+| 第 5 章 | [优化程序性能](第05章-优化程序性能/README.md) |
+| 第 6 章 | [存储器层次结构](第06章-存储器层次结构/README.md) |
+| 第二部分 | 在系统上运行程序 |
+| 第 7 章 | [链接](第07章-链接/README.md) |
+| 第 8 章 | [异常控制流](第08章-异常控制流/README.md) |
+| 第 9 章 | [虚拟内存](第09章-虚拟内存/README.md) |
+| 第三部分 | 程序间的交互和通信 |
+| 第 10 章 | [系统级 I/O](第10章-系统级IO/README.md) |
+| 第 11 章 | [网络编程](第11章-网络编程/README.md) |
+| 第 12 章 | [并发编程](第12章-并发编程/README.md) |
+| 附录 A | [错误处理](附录A-错误处理/README.md) |
+| 参考文献 | [全书参考文献](参考文献.md) |
+
+三部分的导语分别保留在第 2、7、10 章开头。
 
 ## 为什么建立这个仓库
 
@@ -16,47 +54,41 @@
 
 | 资料 | 内容与位置 |
 | --- | --- |
-| 章节正文 | [序章及第 1—12 章](docs/book/README.md)，按小节拆分，包含三部分的独立导语、图表、代码和旁注 |
+| 章节正文 | [前言](前言/README.md)及第 1—12 章；每章同时提供整章正文和按小节阅读入口 |
+| 书末资料 | [附录 A：错误处理](附录A-错误处理/README.md)与[全书参考文献](参考文献.md) |
 | 练习题与家庭作业 | 练习题放在对应正文小节中；有家庭作业的章节可从章目录进入，填空表格保留空位 |
-| 原书练习题答案 | 共 238 道，各章目录末尾有独立的“练习题答案”入口，便于做完后核对 |
-| 实验中文说明 | [八个实验](docs/labs/README.md)的 Markdown 译文，另附 Y86-64 处理器模拟器指南 |
+| 原书练习题答案 | 共 238 道，各章页首与页尾有独立的“练习题答案”入口，便于做完后核对 |
+| 实验中文说明 | [八个实验](实验/README.md)的 Markdown 译文，另附 Y86-64 处理器模拟器指南 |
 | 实验程序包 | 每个实验目录均附官方自学 `.tar` 包，文档顶部可直接找到 |
 
-答案部分是原书提供的**练习题答案**，不包含自行编写的家庭作业解答或实验解答。已核实的原书排印疑点见[答案编校说明](docs/book/answers-editorial.md)。
+答案部分是原书提供的**练习题答案**，不包含自行编写的家庭作业解答或实验解答。已核实的原书排印疑点见[答案编校说明](答案编校说明.md)。
 
 ## 正文怎么找
 
-从[正文目录](docs/book/README.md)选择章节，再选择小节即可。初次学习可以从第 1 章开始，序章中也有“如何阅读此书”等介绍。
+从本页的阅读目录进入章节：想连续学习就打开章节目录中的 `chapter.md`，想查找具体内容就打开章节目录中的 `README.md`，再选择对应小节。初次学习可以从第 1 章开始，前言中也有“如何阅读此书”等介绍。
 
-| 阅读范围 | 章节入口 |
-| --- | --- |
-| 计算机系统入门 | [第 1 章：计算机系统漫游](docs/book/chapter1/README.md) |
-| 第一部分：程序结构和执行 | [第 2 章：信息的表示和处理](docs/book/chapter2/README.md)、[第 3 章：程序的机器级表示](docs/book/chapter3/README.md)、[第 4 章：处理器体系结构](docs/book/chapter4/README.md)、[第 5 章：优化程序性能](docs/book/chapter5/README.md)、[第 6 章：存储器层次结构](docs/book/chapter6/README.md) |
-| 第二部分：在系统上运行程序 | [第 7 章：链接](docs/book/chapter7/README.md)、[第 8 章：异常控制流](docs/book/chapter8/README.md)、[第 9 章：虚拟内存](docs/book/chapter9/README.md) |
-| 第三部分：程序间的交互和通信 | [第 10 章：系统级 I/O](docs/book/chapter10/README.md)、[第 11 章：网络编程](docs/book/chapter11/README.md)、[第 12 章：并发编程](docs/book/chapter12/README.md) |
-
-例如，学习补码时，进入第 2 章目录找到 2.2.3；随正文完成练习后，再通过章目录末尾的答案入口核对。需要记录思路时，可以在本地 Markdown 文件中添加笔记，或单独建立自己的笔记文件。
+例如，学习补码时，在第 2 章的章首目录点击 2.2.3；随正文完成练习后，再通过页首或页尾的答案入口核对。需要记录思路时，可以在本地 Markdown 文件中添加笔记，或单独建立自己的笔记文件。
 
 ## 实验怎么用
 
 | 实验 | 主要练习内容 | 对应章节 | 中文说明 |
 | --- | --- | --- | --- |
-| Data Lab | 位运算、整数与浮点数表示 | [第 2 章](docs/book/chapter2/README.md) | [打开](docs/labs/datalab-zh/datalab-zh.md) |
-| Bomb Lab | 汇编阅读、反汇编与调试 | [第 3 章](docs/book/chapter3/README.md) | [打开](docs/labs/bomblab-zh/bomblab-zh.md) |
-| Attack Lab | 栈、缓冲区溢出与返回导向编程 | [第 3 章](docs/book/chapter3/README.md) | [打开](docs/labs/attacklab-zh/attacklab-zh.md) |
-| Architecture Lab | Y86-64、流水线与性能优化 | [第 4 章](docs/book/chapter4/README.md)；优化部分可结合[第 5 章](docs/book/chapter5/README.md) | [打开](docs/labs/archlab-zh/archlab-zh.md) |
-| Cache Lab | 高速缓存模拟与矩阵转置优化 | [第 6 章](docs/book/chapter6/README.md)；可结合[第 5 章](docs/book/chapter5/README.md) | [打开](docs/labs/cachelab-zh/cachelab-zh.md) |
-| Shell Lab | 进程、信号与作业控制 | [第 8 章](docs/book/chapter8/README.md) | [打开](docs/labs/shlab-zh/shlab-zh.md) |
-| Malloc Lab | 动态内存分配与内存管理 | [第 9 章](docs/book/chapter9/README.md) | [打开](docs/labs/malloclab-zh/malloclab-zh.md) |
-| Proxy Lab | 网络编程、并发与缓存 | [第 10 章](docs/book/chapter10/README.md)、[第 11 章](docs/book/chapter11/README.md)、[第 12 章](docs/book/chapter12/README.md) | [打开](docs/labs/proxylab-zh/proxylab-zh.md) |
+| Data Lab | 位运算、整数与浮点数表示 | [第 2 章](第02章-信息的表示和处理/README.md) | [打开](实验/datalab-zh/datalab-zh.md) |
+| Bomb Lab | 汇编阅读、反汇编与调试 | [第 3 章](第03章-程序的机器级表示/README.md) | [打开](实验/bomblab-zh/bomblab-zh.md) |
+| Attack Lab | 栈、缓冲区溢出与返回导向编程 | [第 3 章](第03章-程序的机器级表示/README.md) | [打开](实验/attacklab-zh/attacklab-zh.md) |
+| Architecture Lab | Y86-64、流水线与性能优化 | [第 4 章](第04章-处理器体系结构/README.md)；优化部分可结合[第 5 章](第05章-优化程序性能/README.md) | [打开](实验/archlab-zh/archlab-zh.md) |
+| Cache Lab | 高速缓存模拟与矩阵转置优化 | [第 6 章](第06章-存储器层次结构/README.md)；可结合[第 5 章](第05章-优化程序性能/README.md) | [打开](实验/cachelab-zh/cachelab-zh.md) |
+| Shell Lab | 进程、信号与作业控制 | [第 8 章](第08章-异常控制流/README.md) | [打开](实验/shlab-zh/shlab-zh.md) |
+| Malloc Lab | 动态内存分配与内存管理 | [第 9 章](第09章-虚拟内存/README.md) | [打开](实验/malloclab-zh/malloclab-zh.md) |
+| Proxy Lab | 网络编程、并发与缓存 | [第 10 章](第10章-系统级IO/README.md)、[第 11 章](第11章-网络编程/README.md)、[第 12 章](第12章-并发编程/README.md) | [打开](实验/proxylab-zh/proxylab-zh.md) |
 
 1. 打开对应中文说明，了解实验目标和要求。
 2. 通过文档顶部的“实验包”链接取得同目录下的 `.tar` 文件，解压到自己的实验工作目录。
-3. 阅读[自学包与原说明的差异](docs/labs/COMPATIBILITY.md)，然后按实验说明和包内 README 配置环境、编译及测试。
+3. 阅读[自学包与原说明的差异](实验/COMPATIBILITY.md)，然后按实验说明和包内 README 配置环境、编译及测试。
 
 实验包主要面向 Linux 环境，部分使用较早的工具链或解释器。原文中的课程日期、服务器地址和提交路径保留自官方模板，不是本仓库提供的课程服务。特别是 **Malloc 自学包仅附两份短测试，不含完整评分跟踪文件**；具体差异已在上述说明中列出。
 
-Architecture Lab 的配套资料见 [Y86-64 模拟器指南](docs/labs/archlab-zh/simguide-zh.md)。实验包的官方来源和 SHA-256 见[来源与校验值](docs/labs/PACKAGES.md)。
+Architecture Lab 的配套资料见 [Y86-64 模拟器指南](实验/archlab-zh/simguide-zh.md)。实验包的官方来源和 SHA-256 见[来源与校验值](实验/PACKAGES.md)。
 
 ## 在线阅读与本地使用
 
@@ -68,15 +100,17 @@ Architecture Lab 的配套资料见 [Y86-64 模拟器指南](docs/labs/archlab-z
 git clone https://github.com/SunnyMaria/csapp-zh-markdown.git
 ```
 
-然后用支持 Markdown 预览的编辑器或阅读器打开 `README.md` 或 `docs/README.md`。阅读资料不需要安装 Python，也不需要原始扫描 PDF。
+然后用支持 Markdown 预览的编辑器或阅读器打开仓库根目录的 `README.md`。阅读资料不需要安装 Python，也不需要原始扫描 PDF。
 
-所有学习资料都在 `docs/` 中，可以将这个目录整体复制到其他位置。**请保留内部目录结构和图片文件，不要只复制单个 Markdown 文件**，否则相对路径引用的图片可能无法显示。实验压缩包也保存在各自的实验目录中。
+前言、十二章正文和实验目录直接放在仓库根目录。每章的 `README.md` 是导航页，`chapter.md` 是整章正文，其他 Markdown 文件是按小节拆分的正文，图片保存在相应的小节目录中，`练习题答案.md` 提供独立答案。实验压缩包保存在各自的实验目录中。
+
+**移动资料时请保留仓库的目录结构和图片文件，不要只复制 Markdown 文件**，否则图片和跨章链接可能无法显示。只需阅读某一章时，可以单独复制整个章节目录，正文图片仍可显示，但跨章导航需要完整仓库。
 
 ## 整理方式与反馈
 
 正文尽量忠于原书的措辞和顺序。文字、代码、普通表格及简单公式使用可编辑文本；需要保留空间结构的图示使用本地图片。不同 Markdown 阅读器对上下标和脚注的显示支持可能不同。
 
-如果发现错字、缺段、图片截断或链接失效，欢迎提交 Issue，注明章节、题号或图号，便于核对。维护者使用的校验方法见 [work/README.md](work/README.md)。
+如果发现错字、缺段、图片截断或链接失效，欢迎提交 Issue，注明章节、题号或图号，便于核对。维护者使用的校验方法见[维护工具](维护工具/README.md)。
 
 ## 2.0 展望：在线阅读与学习
 

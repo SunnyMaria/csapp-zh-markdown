@@ -1,0 +1,42 @@
+# 第 7 章 链接
+
+[返回总目录](../README.md) · [上一章](../第06章-存储器层次结构/README.md) · [下一章](../第08章-异常控制流/README.md) · [整章阅读](chapter.md) · [练习题答案](练习题答案.md)
+
+## 阅读方式
+
+- [整章连续阅读](chapter.md)
+- 本章也保留了所有按小节拆分的 Markdown 文件，适合精确查找、引用和单独阅读。
+
+## 小节目录
+
+- [第二部分 在系统上运行程序](7.0/7.0-part-2.md)
+- [第 7 章 链接](7.1/7.0-chapter-opening.md)
+- [7.1 编译器驱动程序](7.1/7.1-compiler-drivers.md)
+- [7.2 静态链接](7.2/7.2-static-linking.md)
+- [7.3 目标文件](7.3/7.3-object-files.md)
+- [7.4 可重定位目标文件](7.4/7.4-relocatable-object-files.md)
+- [7.5 符号和符号表](7.5/7.5-symbols-and-symbol-tables.md)
+- [7.6 符号解析](7.6/7.6-symbol-resolution.md)
+- [7.6.1 链接器如何解析多重定义的全局符号](7.6/7.6.1-how-linkers-resolve-multiply-defined-global-symbols.md)
+- [7.6.2 与静态库链接](7.6/7.6.2-linking-with-static-libraries.md)
+- [7.6.3 链接器如何使用静态库来解析引用](7.6/7.6.3-how-linkers-use-static-libraries-to-resolve-references.md)
+- [7.7 重定位](7.7/7.7-relocation.md)
+- [7.7.1 重定位条目](7.7/7.7.1-relocation-entries.md)
+- [7.7.2 重定位符号引用](7.7/7.7.2-relocating-symbol-references.md)
+- [7.8 可执行目标文件](7.8/7.8-executable-object-files.md)
+- [7.9 加载可执行目标文件](7.9/7.9-loading-executable-object-files.md)
+- [7.10 动态链接共享库](7.10/7.10-dynamic-linking-with-shared-libraries.md)
+- [7.11 从应用程序中加载和链接共享库](7.11/7.11-loading-and-linking-shared-libraries-from-applications.md)
+- [7.12 位置无关代码](7.12/7.12-position-independent-code.md)
+- [7.13 库打桩机制](7.13/7.13-library-interpositioning.md)
+- [7.13.1 编译时打桩](7.13/7.13.1-compile-time-interpositioning.md)
+- [7.13.2 链接时打桩](7.13/7.13.2-link-time-interpositioning.md)
+- [7.13.3 运行时打桩](7.13/7.13.3-run-time-interpositioning.md)
+- [7.14 处理目标文件的工具](7.14/7.14-tools-for-manipulating-object-files.md)
+- [7.15 小结](7.15/7.15-summary.md)
+- [参考文献说明](7.15/references.md)
+- [家庭作业](homework/7.6-7.13-linking-and-object-files.md)
+
+## 其他资料
+
+- [练习题答案](练习题答案.md)

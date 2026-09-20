@@ -1,0 +1,45 @@
+# 第 5 章 优化程序性能
+
+[返回总目录](../README.md) · [上一章](../第04章-处理器体系结构/README.md) · [下一章](../第06章-存储器层次结构/README.md) · [整章阅读](chapter.md) · [练习题答案](练习题答案.md)
+
+## 阅读方式
+
+- [整章连续阅读](chapter.md)
+- 本章也保留了所有按小节拆分的 Markdown 文件，适合精确查找、引用和单独阅读。
+
+## 小节目录
+
+- [第 5 章 优化程序性能](5.1/5.0-chapter-opening.md)
+- [5.1 优化编译器的能力和局限性](5.1/5.1-optimizing-compiler-capabilities-and-limitations.md)
+- [5.2 表示程序性能](5.2/5.2-expressing-program-performance.md)
+- [5.3 程序示例](5.3/5.3-program-example.md)
+- [5.4 消除循环的低效率](5.4/5.4-eliminating-loop-inefficiencies.md)
+- [5.5 减少过程调用](5.5/5.5-reducing-procedure-calls.md)
+- [5.6 消除不必要的内存引用](5.6/5.6-eliminating-unneeded-memory-references.md)
+- [5.7 理解现代处理器](5.7/5.7-understanding-modern-processors.md)
+- [5.7.1 整体操作](5.7/5.7.1-overall-operation.md)
+- [5.7.2 功能单元的性能](5.7/5.7.2-functional-unit-performance.md)
+- [5.7.3 处理器操作的抽象模型](5.7/5.7.3-abstract-model-of-processor-operation.md)
+- [5.8 循环展开](5.8/5.8-loop-unrolling.md)
+- [5.9 提高并行性](5.9/5.9-enhancing-parallelism.md)
+- [5.9.1 多个累积变量](5.9/5.9.1-multiple-accumulators.md)
+- [5.9.2 重新结合变换](5.9/5.9.2-reassociation-transformation.md)
+- [5.10 优化合并代码的结果小结](5.10/5.10-summary-of-results-for-optimizing-combining-code.md)
+- [5.11 一些限制因素](5.11/5.11-some-limiting-factors.md)
+- [5.11.1 寄存器溢出](5.11/5.11.1-register-spilling.md)
+- [5.11.2 分支预测和预测错误处罚](5.11/5.11.2-branch-prediction-and-misprediction-penalties.md)
+- [5.12 理解内存性能](5.12/5.12-understanding-memory-performance.md)
+- [5.12.1 加载的性能](5.12/5.12.1-load-performance.md)
+- [5.12.2 存储的性能](5.12/5.12.2-store-performance.md)
+- [5.13 应用：性能提高技术](5.13/5.13-application-performance-improvement-techniques.md)
+- [5.14 确认和消除性能瓶颈](5.14/5.14-identifying-and-eliminating-performance-bottlenecks.md)
+- [5.14.1 程序剖析](5.14/5.14.1-program-profiling.md)
+- [5.14.2 使用剖析程序来指导优化](5.14/5.14.2-using-a-profiler-to-guide-optimization.md)
+- [5.15 小结](5.15/5.15-summary.md)
+- [参考文献说明](5.15/references.md)
+- [第 5 章家庭作业：5.13～5.17](homework/5.13-5.17-inner-product-and-memset.md)
+- [第 5 章家庭作业：5.18～5.19](homework/5.18-5.19-polynomial-and-prefix-sum.md)
+
+## 其他资料
+
+- [练习题答案](练习题答案.md)
