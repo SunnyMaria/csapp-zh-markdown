@@ -1,0 +1,71 @@
+name: Publish website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Check out website branch
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Check Pages configuration
+        uses: actions/configure-pages@v5
+
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: '1.9.38'
+
+      - name: Verify book and lab files
+        run: |
+          python3 维护工具/tools/check_release.py .
+          python3 维护工具/tools/check_reading_views.py
+          python3 维护工具/tools/check_supplements.py
+
+      - name: Generate reading pages
+        run: python3 website/scripts/build.py
+
+      - name: Render website
+        run: quarto render website/build
+
+      - name: Verify website links and assets
+        run: python3 website/scripts/check.py
+
+      - name: Upload verified website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: website/build/_site
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
