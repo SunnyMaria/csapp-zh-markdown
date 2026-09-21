@@ -34,4 +34,17 @@ quarto preview website/build --no-browser
 
 书中的代码仅供显示，不会执行。首页为第一章开篇，侧栏提供前言、所有章节、独立答案、实验、附录和参考文献。章节导航保留整章阅读入口，整章页不重复进入搜索结果。
 
-当前只提供本地预览，尚未启用远程自动部署。上线前需验证仓库子路径下的图片、页面链接和搜索，并配置 GitHub Pages。
+## 开发分支部署
+
+`.github/workflows/website-preview.yml` 是 GitHub 要求放置在固定位置的工作流入口。网站的其余文件集中在本目录。
+
+推送到 `feature/quarto-reader` 后，工作流会校验原始文档与实验包、生成页面、运行 Quarto、检查网页链接与资源，再将 `build/_site` 发布到 GitHub Pages。流程不提交生成文件，不修改 `main` 或 `v1.1` 标签。
+
+仓库设置要求：
+
+- Settings → Pages → Source 选择 GitHub Actions。
+- Settings → Environments → github-pages 中，只允许 `feature/quarto-reader` 分支部署。
+
+在仓库 Actions 页面查看 `Website preview` 运行结果。部署成功后的网址为 `https://sunnymaria.github.io/csapp-zh-markdown/`。这是公开的开发预览，目前不在主分支 README 中添加入口。
+
+工作流目前仅通过该开发分支的 push 触发；失败后可在对应运行页面重新执行。将来正式合并前，需要一起调整触发分支和部署环境规则，不能仅合并后就假定主分支会自动发布。
